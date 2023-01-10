@@ -46,3 +46,4 @@ Here are the sequence of commands to run the script:
 * terraform init
 * terraform plan
 * terraform apply
+
