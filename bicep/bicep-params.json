@@ -1,0 +1,43 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "location": {
+      "value": "eastus"
+    },
+    "storageAccountNames": {
+      "value": [
+        "storage1",
+        "storage2",
+        "storage3"
+      ]
+    },
+    "storageAccountContainerNames": {
+      "value": {
+        "container11": "storage1",
+        "container12": "storage1",
+        "container21": "storage2",
+        "container22": "storage2",
+        "container31": "storage3",
+        "container32": "storage3"
+      }
+    },
+    "coolManagementPolicies": {
+      "value": {
+        "container21": 7,
+        "container31": 30
+      }
+    },
+    "archiveManagementPolicies": {
+      "value": {
+        "container22": 9
+      }
+    },
+    "deleteManagementPolicies": {
+      "value": {
+        "container11": 10,
+        "container32": 15
+      }
+    }
+  }
+}

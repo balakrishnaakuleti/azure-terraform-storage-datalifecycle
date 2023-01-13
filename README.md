@@ -47,3 +47,6 @@ Here are the sequence of commands to run the script:
 * terraform plan
 * terraform apply
 
+### Bicep
+
+There is an equivalent bicep template available. For more information on how to run the bicep command, refer to the Bicep [README](./bicep/README.md).
