@@ -1,7 +1,18 @@
-
+@description('lifecycle rule type')
+@allowed([
+  'cool'
+  'archive'
+  'delete'
+])
 param ruleType string
+
+@description('Storage account name where lifecycle rule should be added')
 param storageAccountName string
+
+@description('Name of lifecycle rule')
 param lifecycleRuleName string
+
+@description('Lifecycle rule interval in days')
 param lifecycleRuleInterval int
 
 var BLOB_TYPE_BLOCK_BLOB = 'blockBlob'
